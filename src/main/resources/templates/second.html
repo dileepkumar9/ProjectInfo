@@ -9,8 +9,9 @@
     <title>Seat Management</title>
 </head>
 <body>
-
-<form th:action="@{/saveDetails}" method="post">
+<p th:text="${error}" style="color:red"></p>
+<p th:text="${success}" style="color:green"></p>
+<form th:action="@{/saveDetails/{className} (className = ${className})}" method="post">
     <!--    <tr th:each="data, iterstat: ${mois}">-->
     <table>
         <thead>
@@ -21,16 +22,16 @@
         <tbody>
         <tr th:each="data, ind: ${mois}">
             <td th:each="content, iter: ${data}">
-                <input name="prop" th:if="${content} == 0" type="text" th:id="|td${iter.index}|" />
-                <input name="prop" th:if="${content} != 0" th:value="${content}" type="text" th:id="|td${iter.index}|" />
+                <input size="4"  name="prop" th:if="${content} == 0" type="text" th:id="|td${iter.index}|" />
+                <input size="4" name="prop" th:if="${content} != 0" th:value="${content}" type="text" th:id="|td${iter.index}|" />
 
-                <label th:text="'Seat: '+${ind.index*10 + iter.index+1}"></label>
 <!--                <button th:text="${content}" th:if="${content} != 0" th:id="|td${iter.index}|" />-->
+                <label th:text="'Seat: '+${ind.index*10 + iter.index+1}"></label>
             </td>
         </tr>
         </tbody>
     </table>
-    <button type="submit"> Save</button>
+    <button type="submit"> Submit</button>
 </form>
 
 <table border="1" align="center">
