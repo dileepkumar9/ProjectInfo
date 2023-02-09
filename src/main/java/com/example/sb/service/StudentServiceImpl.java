@@ -9,28 +9,28 @@ import com.example.sb.repository.StudentRepository;
 
 @Service
 public class StudentServiceImpl implements StudentService {
-	
-	@Autowired
-	private StudentRepository pr;
 
-	@Override
-	public List<StudentDetails> getAllStudentDetails() {
-		return pr.findAll();
-	}
+    @Autowired
+    private StudentRepository pr;
 
-	@Override
-	public StudentDetails getProfile(Long id){
-		return  pr.findById(id).orElse(null);
-	}
+    @Override
+    public List<StudentDetails> getAllStudentDetails() {
+        return pr.findAll();
+    }
 
-	@Override
-	public void saveProfile(StudentDetails studentDetails) {
-		this.pr.save(studentDetails);
-	}
+    @Override
+    public StudentDetails getStudent(Long id) {
+        return pr.findById(id).orElse(null);
+    }
 
-	@Override
-	public void deleteEmployeeById(long id) {
-		this.pr.deleteById(id);
-	}
+    @Override
+    public void saveStudent(StudentDetails studentDetails) {
+        this.pr.save(studentDetails);
+    }
+
+    @Override
+    public void deleteStudentById(long id) {
+        this.pr.deleteById(id);
+    }
 
 }

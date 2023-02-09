@@ -12,7 +12,7 @@ public class StudentDetails {
 
     private String name;
 
-    private String disciplineId;
+    private int disciplineId;
 
     public Long getRollNo() {
         return rollNo;
@@ -30,11 +30,11 @@ public class StudentDetails {
         this.name = name;
     }
 
-    public String getDisciplineId() {
+    public int getDisciplineId() {
         return disciplineId;
     }
 
-    public void setDisciplineId(String disciplineId) {
+    public void setDisciplineId(int disciplineId) {
         this.disciplineId = disciplineId;
     }
 }

@@ -7,11 +7,10 @@ public interface StudentService {
 	
 	List<StudentDetails> getAllStudentDetails();
 
-	StudentDetails getProfile(Long id);
+	StudentDetails getStudent(Long id);
 
-	void saveProfile(StudentDetails studentDetails);
+	void saveStudent(StudentDetails studentDetails);
 
-	void deleteEmployeeById(long id);
-
+	void deleteStudentById(long id);
 
 }

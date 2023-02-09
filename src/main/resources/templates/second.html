@@ -13,29 +13,50 @@
 <form th:action="@{/saveDetails}" method="post">
     <!--    <tr th:each="data, iterstat: ${mois}">-->
     <table>
+        <thead>
+        <tr>
+            <th th:text="'Column '+ ${i}" th:each="i : ${#numbers.sequence(1, 10)}"></th>
+        </tr>
+        </thead>
         <tbody>
         <tr th:each="data, ind: ${mois}">
             <td th:each="content, iter: ${data}">
-                <label th:text="${ind.index*10}+${iter.index+1}"></label>
-                <input name="prop" type="text" th:id="|td${iter.index}|">
+                <input name="prop" th:if="${content} == 0" type="text" th:id="|td${iter.index}|" />
+                <input name="prop" th:if="${content} != 0" th:value="${content}" type="text" th:id="|td${iter.index}|" />
+
+                <label th:text="'Seat: '+${ind.index*10 + iter.index+1}"></label>
+<!--                <button th:text="${content}" th:if="${content} != 0" th:id="|td${iter.index}|" />-->
             </td>
         </tr>
         </tbody>
     </table>
-    <!--    </tr>-->
-
-    <!--    <table>-->
-    <!--        <tbody>-->
-    <!--        <tr th:each="i : ${#numbers.sequence(0,9)}">-->
-    <!--            <td th:each="j : ${#numbers.sequence(0, 9)}">-->
-    <!--                <label th:text="${i*10}+${j+1}"></label>-->
-    <!--                <input name="prop" type="text" th:id="'input-' + ${i} + '-' + ${j}" />-->
-    <!--            </td>-->
-    <!--        </tr>-->
-    <!--        </tbody>-->
-    <!--    </table>-->
-
     <button type="submit"> Save</button>
 </form>
+
+<table border="1" align="center">
+    <div align="center">
+        <thead>
+        <tr>
+            <th>Roll No</th>
+            <th>Student Name</th>
+            <th>Discipline Id</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="studentDetails : ${listStudentDetails}">
+            <td th:text="${studentDetails.rollNo}"></td>
+            <td th:text="${studentDetails.name}"></td>
+            <td th:text="${studentDetails.disciplineId}"></td>
+
+<!--            <td>-->
+<!--                <a class="btn btn-primary" th:href="@{/share/{emp_id}/{mng_id}(emp_id=${emp_id},mng_id=${manager.id})}">Select</a>-->
+<!--                &lt;!&ndash;        <a class="btn btn-secondary" th:if="${profile.manager} != null">Block</a>&ndash;&gt;-->
+<!--            </td>-->
+            <!--      <td><a th:href="">Delete</a></td>-->
+        </tr>
+        </tbody>
+    </div>
+</table>
+
 </body>
 </html>
