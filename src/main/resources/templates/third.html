@@ -8,26 +8,24 @@
     <title>Title</title>
 </head>
 <body>
-<h1>List of Classes</h1>
-<table class="table">
-    <thead class="thead-dark">
-    <tr>
-        <th>Class Name</th>
-        <th>Availability</th>
-        <th>Actions</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr th:each="details : ${classDetails}">
-        <td th:text="${details.className}"></td>
-        <td th:text="${details.availability}"></td>
-        <td>
-            <a type="button" class="btn btn-success"
-                    th:href="@{/second/{className}(className = ${details.className})}">View Class
-            </a>
-        </td>
-    </tr>
-    </tbody>
+<h1>Report</h1>
+<table border="1" align="center">
+    <div align="center">
+        <thead>
+        <tr>
+            <th>Roll No</th>
+            <th>Student Name</th>
+            <th>Discipline Id</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="studentDetails : ${listStudentDetails}">
+            <td th:text="${studentDetails.rollNo}"></td>
+            <td th:text="${studentDetails.name}"></td>
+            <td th:text="${studentDetails.disciplineId}"></td>
+        </tr>
+        </tbody>
+    </div>
 </table>
 </body>
 </html>

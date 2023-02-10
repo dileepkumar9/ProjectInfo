@@ -33,48 +33,8 @@ public class StudentController {
     @Autowired
     private ClassDataService classDataService;
 
-//    @RequestMapping("/")
-//    public String viewHomePage() {
-
-//        return "index";
-//    }
-
-    @RequestMapping("/second/{className}")
-    public String secondPage(@PathVariable(value = "className") String className, Model model) {
-        List<StudentDetails> studentDetailsList = studentService.getAllStudentDetails();
-        List<ClassData> classDataList = classDataService.getAllClassData();
-        List<ClassData> filterClassData = new ArrayList<>();
-        for (int i = 0; i < classDataList.size(); i++) {
-            if (Objects.equals(classDataList.get(i).getClassName(), className)) {
-                filterClassData.add(classDataList.get(i));
-            }
-        }
-
-        for (int j = 0; j < studentDetailsList.size(); j++)
-            for (int i = 0; i < classDataList.size(); i++) {
-                if (Objects.equals(classDataList.get(i).getRollNo(), studentDetailsList.get(j).getRollNo())) {
-                    studentDetailsList.remove(j);
-                }
-            }
-        List<List<Integer>> a = emptyArray();
-        for (int i = 0; i < filterClassData.size(); i++) {
-            int t = (filterClassData.get(i).getSeatNo() - 1) / 10;
-            List<Integer> t1 = a.get(t);
-            t1.set((filterClassData.get(i).getSeatNo() - 1) % 10, filterClassData.get(i).getRollNo().intValue());
-            a.set(t, t1);
-//            System.out.println(t1);
-//            System.out.println(t);
-        }
-        model.addAttribute("error", error);
-        model.addAttribute("success", success);
-        model.addAttribute("mois", a);
-        model.addAttribute("className", className);
-        model.addAttribute("listStudentDetails", studentDetailsList);
-        return "second";
-    }
-
     @RequestMapping("/")
-    public String thirdPage(Model model) {
+    public String homePage(Model model) {
         List<ClassData> classDataList = classDataService.getAllClassData();
         List<ClassDetails> classDetailsList = classDetailService.getAllClassDetails();
         List<ClassDetails> temp = new ArrayList<>();
@@ -92,7 +52,64 @@ public class StudentController {
             temp.add(classDetails);
         }
         model.addAttribute("classDetails", temp);
+        return "index";
+    }
+
+    @RequestMapping("/second/{className}")
+    public String secondPage(@PathVariable(value = "className") String className, Model model) {
+        List<StudentDetails> studentDetailsList = studentService.getAllStudentDetails();
+        List<ClassData> classDataList = classDataService.getAllClassData();
+        List<ClassData> filterClassData = new ArrayList<>();
+        for (int i = 0; i < classDataList.size(); i++) {
+            if (Objects.equals(classDataList.get(i).getClassName(), className)) {
+                filterClassData.add(classDataList.get(i));
+            }
+        }
+
+        for (int j = 0; j < studentDetailsList.size(); j++)
+            for (ClassData classData : classDataList)
+                if (Objects.equals(classData.getRollNo(), studentDetailsList.get(j).getRollNo()))
+                    studentDetailsList.remove(j);
+
+        List<List<Integer>> a = emptyArray();
+        for (int i = 0; i < filterClassData.size(); i++) {
+            int t = (filterClassData.get(i).getSeatNo() - 1) / 10;
+//            System.out.println((filterClassData.get(i).getSeatNo() - 1)/10);
+            List<Integer> t1 = a.get(t);
+//            System.out.println(t1);
+            t1.set((filterClassData.get(i).getSeatNo() - 1) % 10, filterClassData.get(i).getRollNo().intValue());
+            a.set(t, t1);
+//            System.out.println(t1);
+//            System.out.println(t);
+        }
+        model.addAttribute("error", error);
+        model.addAttribute("success", success);
+        model.addAttribute("mois", a);
+        model.addAttribute("className", className);
+        model.addAttribute("listStudentDetails", studentDetailsList);
+        return "second";
+    }
+
+    @RequestMapping("/third/{className}")
+    public String thirdPage(@PathVariable(value = "className") String className, Model model) {
+        List<ClassData> classDataList = classDataService.getAllClassData();
+        List<StudentDetails> temp = new ArrayList<>();
+        for (int i = 0; i < classDataList.size(); i++) {
+            if (Objects.equals(classDataList.get(i).getClassName(), className))
+                temp.add(studentService.getStudent(classDataList.get(i).getRollNo()));
+        }
+        model.addAttribute("listStudentDetails", temp);
         return "third";
+    }
+
+    @RequestMapping("/deleteSeat/{className}")
+    public String deleteSeat(@RequestParam MultiValueMap<String, String> parameters, @PathVariable(value = "className") String className) {
+//        System.out.println();
+//        System.out.println(className);
+
+        List<String> data = new ArrayList<>(parameters.get("prop"));
+        classDataService.deleteClassData(Long.parseLong(data.get(0)));
+        return "redirect:/second/" + className;
     }
 
     List<List<Integer>> emptyArray() {
@@ -121,7 +138,7 @@ public class StudentController {
                     saveClassData(className, Long.parseLong(data.get(i)), i + 1);
                 }
             }
-        return "redirect:/second/"+className;
+        return "redirect:/second/" + className;
     }
 
     void deleteClassData(String className, int seatNo) {

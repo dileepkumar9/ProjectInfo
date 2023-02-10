@@ -2,10 +2,16 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
+    <style>
+<!--        input[type="text"]:focus{-->
+<!--        background-color:yellow;-->
+<!--        }-->
+
+    </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="secondPageStyle.css">
     <title>Seat Management</title>
 </head>
 <body>
@@ -22,17 +28,33 @@
         <tbody>
         <tr th:each="data, ind: ${mois}">
             <td th:each="content, iter: ${data}">
-                <input size="4"  name="prop" th:if="${content} == 0" type="text" th:id="|td${iter.index}|" />
-                <input size="4" name="prop" th:if="${content} != 0" th:value="${content}" type="text" th:id="|td${iter.index}|" />
-
-<!--                <button th:text="${content}" th:if="${content} != 0" th:id="|td${iter.index}|" />-->
                 <label th:text="'Seat: '+${ind.index*10 + iter.index+1}"></label>
+                <input size="4" name="prop" th:if="${content} == 0" type="text" th:id="|td${iter.index}|"/>
+                <input size="4" name="prop" th:if="${content} != 0" th:value="${content}" type="text"
+                       th:id="|td${iter.index}|"/>
+
+                <!--                <button th:text="${content}" th:if="${content} != 0" th:id="|td${iter.index}|" />-->
+
             </td>
         </tr>
         </tbody>
     </table>
-    <button type="submit"> Submit</button>
+    <div style="height:20px"></div>
+
+    <a style="margin:10px" type="button" class="btn btn-success" th:href="@{/}">Back</a>
+    <div class="vertical-center">
+        <button style="margin:50%" type="submit">Submit</button>
+    </div>
+
 </form>
+
+<div style="height:20px">
+    <form th:action="@{/deleteSeat/{className} (className = ${className})}" method="post">
+        <label>Delete Seat Allocation: </label>
+        <input size="4" name="prop" type="text"/>
+        <button type="submit"> Delete</button>
+    </form>
+</div>
 
 <table border="1" align="center">
     <div align="center">
@@ -49,10 +71,10 @@
             <td th:text="${studentDetails.name}"></td>
             <td th:text="${studentDetails.disciplineId}"></td>
 
-<!--            <td>-->
-<!--                <a class="btn btn-primary" th:href="@{/share/{emp_id}/{mng_id}(emp_id=${emp_id},mng_id=${manager.id})}">Select</a>-->
-<!--                &lt;!&ndash;        <a class="btn btn-secondary" th:if="${profile.manager} != null">Block</a>&ndash;&gt;-->
-<!--            </td>-->
+            <!--            <td>-->
+            <!--                <a class="btn btn-primary" th:href="@{/share/{emp_id}/{mng_id}(emp_id=${emp_id},mng_id=${manager.id})}">Select</a>-->
+            <!--                &lt;!&ndash;        <a class="btn btn-secondary" th:if="${profile.manager} != null">Block</a>&ndash;&gt;-->
+            <!--            </td>-->
             <!--      <td><a th:href="">Delete</a></td>-->
         </tr>
         </tbody>
