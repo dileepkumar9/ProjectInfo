@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Data</title>
+</head>
+<body>
+<h1>Add New Class/Student Details</h1>
+<h2>Add New Class</h2>
+<form action="#" th:action="@{/addClass}" th:object="${classData}" method="POST">
+    <label>Class Name: </label>
+    <input type="text" th:field="${classData.className}" placeholder="Class Name">
+    <button type="submit">Save</button>
+</form>
+
+<h2>Delete Class</h2>
+<form action="#" th:action="@{/deleteClass}" method="POST">
+    <label>Class Name: </label>
+    <input name="prop" type="text" placeholder="Class Name">
+    <button type="submit">Delete</button>
+</form>
+
+<h2>Add New Student Details</h2>
+<form action="#" th:action="@{/addStudent}" th:object="${student}" method="POST">
+    <input type="text" th:field="${student.rollNo}" placeholder="Roll No">
+    <input type="text" th:field="${student.name}" placeholder="Name">
+    <input type="text" th:field="${student.disciplineId}" placeholder="Discipline Id">
+    <button type="submit">Save</button>
+</form>
+
+<h2>Delete Student</h2>
+<form action="#" th:action="@{/deleteStudent}" method="POST">
+    <label>Roll No: </label>
+    <input name="prop2" type="text" placeholder="Roll No">
+    <button type="submit">Delete</button>
+</form>
+
+<div style="height:15px"></div>
+<div>
+    <button type="button"><a style="margin:10px; text-decoration:none;" type="button" class="btn btn-success" th:href="@{/}">Back</a></button>
+</div>
+</body>
+</html>

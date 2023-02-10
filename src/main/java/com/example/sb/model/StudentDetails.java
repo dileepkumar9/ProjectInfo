@@ -7,7 +7,6 @@ import javax.persistence.*;
 public class StudentDetails {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long rollNo;
 
     private String name;

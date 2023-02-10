@@ -9,10 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.MultiValueMap;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 import com.example.sb.service.StudentService;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,19 +33,21 @@ public class StudentController {
 
     @RequestMapping("/")
     public String homePage(Model model) {
+        error = "";
+        success = "";
         List<ClassData> classDataList = classDataService.getAllClassData();
         List<ClassDetails> classDetailsList = classDetailService.getAllClassDetails();
         List<ClassDetails> temp = new ArrayList<>();
-        for (int i = 0; i < classDetailsList.size(); i++) {
+        for (ClassDetails details : classDetailsList) {
             int t = 0;
-            for (int j = 0; j < classDataList.size(); j++) {
-                if (Objects.equals(classDetailsList.get(i).getClassName(), classDataList.get(j).getClassName())) {
+            for (ClassData classData : classDataList) {
+                if (Objects.equals(details.getClassName(), classData.getClassName())) {
                     t++;
                 }
             }
             ClassDetails classDetails = new ClassDetails();
             classDetails.setAvailability(100 - t);
-            classDetails.setClassName(classDetailsList.get(i).getClassName());
+            classDetails.setClassName(details.getClassName());
             classDetailService.saveClassDetail(classDetails);
             temp.add(classDetails);
         }
@@ -60,9 +60,9 @@ public class StudentController {
         List<StudentDetails> studentDetailsList = studentService.getAllStudentDetails();
         List<ClassData> classDataList = classDataService.getAllClassData();
         List<ClassData> filterClassData = new ArrayList<>();
-        for (int i = 0; i < classDataList.size(); i++) {
-            if (Objects.equals(classDataList.get(i).getClassName(), className)) {
-                filterClassData.add(classDataList.get(i));
+        for (ClassData data : classDataList) {
+            if (Objects.equals(data.getClassName(), className)) {
+                filterClassData.add(data);
             }
         }
 
@@ -72,12 +72,12 @@ public class StudentController {
                     studentDetailsList.remove(j);
 
         List<List<Integer>> a = emptyArray();
-        for (int i = 0; i < filterClassData.size(); i++) {
-            int t = (filterClassData.get(i).getSeatNo() - 1) / 10;
+        for (ClassData filterClassDatum : filterClassData) {
+            int t = (filterClassDatum.getSeatNo() - 1) / 10;
 //            System.out.println((filterClassData.get(i).getSeatNo() - 1)/10);
             List<Integer> t1 = a.get(t);
 //            System.out.println(t1);
-            t1.set((filterClassData.get(i).getSeatNo() - 1) % 10, filterClassData.get(i).getRollNo().intValue());
+            t1.set((filterClassDatum.getSeatNo() - 1) % 10, filterClassDatum.getRollNo().intValue());
             a.set(t, t1);
 //            System.out.println(t1);
 //            System.out.println(t);
@@ -94,9 +94,9 @@ public class StudentController {
     public String thirdPage(@PathVariable(value = "className") String className, Model model) {
         List<ClassData> classDataList = classDataService.getAllClassData();
         List<StudentDetails> temp = new ArrayList<>();
-        for (int i = 0; i < classDataList.size(); i++) {
-            if (Objects.equals(classDataList.get(i).getClassName(), className))
-                temp.add(studentService.getStudent(classDataList.get(i).getRollNo()));
+        for (ClassData classData : classDataList) {
+            if (Objects.equals(classData.getClassName(), className))
+                temp.add(studentService.getStudent(classData.getRollNo()));
         }
         model.addAttribute("listStudentDetails", temp);
         return "third";
@@ -104,12 +104,51 @@ public class StudentController {
 
     @RequestMapping("/deleteSeat/{className}")
     public String deleteSeat(@RequestParam MultiValueMap<String, String> parameters, @PathVariable(value = "className") String className) {
-//        System.out.println();
-//        System.out.println(className);
-
         List<String> data = new ArrayList<>(parameters.get("prop"));
         classDataService.deleteClassData(Long.parseLong(data.get(0)));
         return "redirect:/second/" + className;
+    }
+
+    @RequestMapping("/addNewData")
+    public String addNewData(Model model) {
+        model.addAttribute("classData", new ClassDetails());
+        model.addAttribute("student", new StudentDetails());
+        return "addClass";
+    }
+
+    @PostMapping("/addClass")
+    public String addClass(@ModelAttribute("classData") ClassDetails classDetails, Model model) {
+        classDetails.setAvailability(100);
+        classDetailService.saveClassDetail(classDetails);
+        model.addAttribute("classData", new ClassDetails());
+        model.addAttribute("student", new StudentDetails());
+        return "addClass";
+    }
+
+    @PostMapping("/deleteClass")
+    public String deleteClass(@RequestParam MultiValueMap<String, String> parameters, Model model) {
+        classDetailService.deleteClassDetail(new ArrayList<>(parameters.get("prop")).get(0));
+        model.addAttribute("classData", new ClassDetails());
+        model.addAttribute("student", new StudentDetails());
+        return "addClass";
+    }
+
+    @PostMapping("/deleteStudent")
+    public String deleteStudent(@RequestParam MultiValueMap<String, String> parameters, Model model) {
+        String rollNo = new ArrayList<>(parameters.get("prop2")).get(0);
+        if (checkNumber(rollNo))
+            studentService.deleteStudentById(Long.parseLong(rollNo));
+        model.addAttribute("classData", new ClassDetails());
+        model.addAttribute("student", new StudentDetails());
+        return "addClass";
+    }
+
+    @PostMapping("/addStudent")
+    public String addStudent(@ModelAttribute("student") StudentDetails studentDetails, Model model) {
+        studentService.saveStudent(studentDetails);
+        model.addAttribute("classData", new ClassDetails());
+        model.addAttribute("student", new StudentDetails());
+        return "addClass";
     }
 
     List<List<Integer>> emptyArray() {
@@ -125,8 +164,8 @@ public class StudentController {
 
     @RequestMapping("/saveDetails/{className}")
     public String saveDetails(@RequestParam MultiValueMap<String, String> parameters, @PathVariable(value = "className") String className) {
-//        System.out.println(parameters.get("prop"));
-//        System.out.println(className);
+        error = "";
+        success = "";
         List<String> data = new ArrayList<>(parameters.get("prop"));
         for (int i = 0; i < data.size(); i++)
             if (checkNumber(data.get(i))) {
