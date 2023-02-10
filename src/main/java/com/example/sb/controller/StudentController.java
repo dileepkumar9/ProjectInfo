@@ -180,12 +180,12 @@ public class StudentController {
         List<String> data = new ArrayList<>(parameters.get("prop"));
         for (int i = 0; i < data.size(); i++)
             if (checkNumber(data.get(i)))
-                if (!checkSameClass(className, Long.parseLong(data.get(i))))
+                if (!checkSameClass(className, Long.parseLong(data.get(i)))) {
                     error = "Already allocated seat in another class";
-                else if (checkValidation(className, Long.parseLong(data.get(i)), i + 1)) {
+                } else if (checkSameSeat(Long.parseLong(data.get(i)), i + 1)) {
+                    System.out.println("Same Class and seat "+(i+1));
+                } else if (checkValidation(className, Long.parseLong(data.get(i)), i + 1)) {
                     error = "Seat No: " + (i + 1) + " unable to arrange the seat";
-                } else if (checkSameSeatClass(className, Long.parseLong(data.get(i)), i+1)) {
-                    System.out.println("Same Class and seat");
                 } else {
                     success = "Successfully Allocated";
                     deleteClassData(className, i + 1);
@@ -195,9 +195,13 @@ public class StudentController {
         return "redirect:/second/" + className;
     }
 
-    boolean checkSameSeatClass(String className, Long rollNo, int seatNo) {
+    boolean checkSameSeat(Long rollNo, int seatNo) {
         ClassData classData = classDataService.getClassData(rollNo);
-        return Objects.equals(classData.getClassName(), className) && Objects.equals(classData.getSeatNo(), seatNo);
+        try {
+            return Objects.equals(classData.getSeatNo(), seatNo);
+        } catch (Exception e) {
+            return false;
+        }
     }
 
     void deleteClassData(String className, int seatNo) {
@@ -212,21 +216,27 @@ public class StudentController {
         // If both are same discipline id return true
         List<ClassData> classDataList = classDataService.getAllClassData();
         StudentDetails studentDetails = studentService.getStudent(rollNo);
-        if (seatNo % 10 > 1)
+        if (seatNo % 10 > 1) {
             for (ClassData classData : classDataList)
                 if (Objects.equals(classData.getClassName(), className) && Objects.equals(classData.getSeatNo(), seatNo - 1) && classData.getDisciplineId() == studentDetails.getDisciplineId())
                     return true;
+        }
 
-        if (seatNo % 10 > 0)
+        if (seatNo % 10 > 0) {
             for (ClassData classData : classDataList)
-                return Objects.equals(classData.getClassName(), className) && Objects.equals(classData.getSeatNo(), seatNo + 1) && classData.getDisciplineId() == studentDetails.getDisciplineId();
-
+                 if(Objects.equals(classData.getClassName(), className) && Objects.equals(classData.getSeatNo(), seatNo + 1) && classData.getDisciplineId() == studentDetails.getDisciplineId())
+                     return true;
+        }
         return false;
     }
 
     boolean checkSameClass(String className, Long rollNO) {
         ClassData classData = classDataService.getClassData(rollNO);
-        return Objects.equals(classData.getClassName(), className);
+        try {
+            return Objects.equals(classData.getClassName(), className);
+        } catch (Exception e) {
+            return true;
+        }
     }
 
     //Save the student and seat no in ClassData(Table)

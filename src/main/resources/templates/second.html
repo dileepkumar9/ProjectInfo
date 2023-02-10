@@ -18,8 +18,8 @@
 </head>
 
 <body>
-<p th:text="${error}" style="color:red"></p>
-<p th:text="${success}" style="color:green"></p>
+<h3 th:text="${error}" style="color:red"></h3>
+<h3 th:text="${success}" style="color:green"></h3>
 <form th:action="@{/saveDetails/{className} (className = ${className})}" method="post">
     <!--    <tr th:each="data, iterstat: ${mois}">-->
     <table>
@@ -32,7 +32,7 @@
         <tr th:each="data, ind: ${mois}">
             <td th:each="content, iter: ${data}">
                 <input size="4" name="prop" th:if="${content} == 0" th:id="|td${iter.index}|"/>
-                <input size="4" name="prop" th:if="${content} != 0" th:value="${content}"
+                <input style="background-color:lightgreen" size="4" name="prop" th:if="${content} != 0" th:value="${content}"
                        th:id="|td${iter.index}|"/>
                 <label th:text="'Seat: '+${ind.index*10 + iter.index+1}"></label>
 
