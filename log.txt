@@ -7880,3 +7880,717 @@
 2023-02-10 11:32:05.911 TRACE 5560 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class1]
 2023-02-10 11:32:05.911 TRACE 5560 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [1]
 2023-02-10 11:32:05.911 TRACE 5560 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [22]
+2023-02-10 11:38:55.362  INFO 5560 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-10 11:38:55.363 TRACE 5560 --- [SpringApplicationShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@7d11e08f] for TypeConfiguration
+2023-02-10 11:38:55.363 DEBUG 5560 --- [SpringApplicationShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@5c30ca84] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@7d11e08f]
+2023-02-10 11:38:55.367  INFO 5560 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-02-10 11:38:55.384  INFO 5560 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-02-10 11:39:04.310  INFO 13348 --- [restartedMain] com.example.sb.ProjectInfoApplication    : Starting ProjectInfoApplication using Java 18.0.2.1 on LP-5CD2081KW6 with PID 13348 (C:\Users\boga_david\IdeaProjects\ProjectInfo\target\classes started by boga_david in C:\Users\boga_david\IdeaProjects\ProjectInfo)
+2023-02-10 11:39:04.312  INFO 13348 --- [restartedMain] com.example.sb.ProjectInfoApplication    : No active profile set, falling back to 1 default profile: "default"
+2023-02-10 11:39:04.376  INFO 13348 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-02-10 11:39:04.377  INFO 13348 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-02-10 11:39:05.257  INFO 13348 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-10 11:39:05.360  INFO 13348 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 91 ms. Found 4 JPA repository interfaces.
+2023-02-10 11:39:06.268  INFO 13348 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-10 11:39:06.291  INFO 13348 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-10 11:39:06.292  INFO 13348 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-02-10 11:39:06.490  INFO 13348 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-10 11:39:06.490  INFO 13348 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2113 ms
+2023-02-10 11:39:06.767  INFO 13348 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-10 11:39:06.821  INFO 13348 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2023-02-10 11:39:07.012  INFO 13348 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-02-10 11:39:07.044 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@36d501d7
+2023-02-10 11:39:07.045 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@36d501d7
+2023-02-10 11:39:07.045 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@36d501d7
+2023-02-10 11:39:07.046 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@1a58c368
+2023-02-10 11:39:07.046 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.TrueFalseType@69d13602
+2023-02-10 11:39:07.047 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.YesNoType@4a63b734
+2023-02-10 11:39:07.048 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@4cc3ea6d
+2023-02-10 11:39:07.049 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@4cc3ea6d
+2023-02-10 11:39:07.049 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@4cc3ea6d
+2023-02-10 11:39:07.050 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.CharacterType@348340df
+2023-02-10 11:39:07.050 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.CharacterType@348340df
+2023-02-10 11:39:07.050 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@348340df
+2023-02-10 11:39:07.051 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@40fac1ca
+2023-02-10 11:39:07.052 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@40fac1ca
+2023-02-10 11:39:07.052 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.ShortType@40fac1ca
+2023-02-10 11:39:07.053 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.IntegerType@10bc2e0d
+2023-02-10 11:39:07.053 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.IntegerType@10bc2e0d
+2023-02-10 11:39:07.053 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@10bc2e0d
+2023-02-10 11:39:07.054 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@2d69f610
+2023-02-10 11:39:07.054 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@2d69f610
+2023-02-10 11:39:07.055 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.LongType@2d69f610
+2023-02-10 11:39:07.056 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@58df17ac
+2023-02-10 11:39:07.056 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@58df17ac
+2023-02-10 11:39:07.056 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.FloatType@58df17ac
+2023-02-10 11:39:07.057 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@6e507c8d
+2023-02-10 11:39:07.057 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@6e507c8d
+2023-02-10 11:39:07.057 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@6e507c8d
+2023-02-10 11:39:07.058 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@69854165
+2023-02-10 11:39:07.058 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@69854165
+2023-02-10 11:39:07.059 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BigIntegerType@623ccdf0
+2023-02-10 11:39:07.059 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@623ccdf0
+2023-02-10 11:39:07.060 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.StringType@7e59d1ad
+2023-02-10 11:39:07.060 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.StringType@7e59d1ad
+2023-02-10 11:39:07.061 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.StringNVarcharType@5c66cc13
+2023-02-10 11:39:07.061 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@4b4cd467
+2023-02-10 11:39:07.062 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.UrlType@28b71187
+2023-02-10 11:39:07.062 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.UrlType@28b71187
+2023-02-10 11:39:07.062 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.DurationType@5faca55d
+2023-02-10 11:39:07.062 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.DurationType@5faca55d
+2023-02-10 11:39:07.063 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Instant -> org.hibernate.type.InstantType@4eac4cd
+2023-02-10 11:39:07.063 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.InstantType@4eac4cd
+2023-02-10 11:39:07.064 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@f025110
+2023-02-10 11:39:07.064 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@f025110
+2023-02-10 11:39:07.065 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.LocalDateType@5c43df67
+2023-02-10 11:39:07.065 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@5c43df67
+2023-02-10 11:39:07.066 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@296a97d9
+2023-02-10 11:39:07.066 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@296a97d9
+2023-02-10 11:39:07.067 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@7058273b
+2023-02-10 11:39:07.067 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@7058273b
+2023-02-10 11:39:07.069 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@3c82ac77
+2023-02-10 11:39:07.069 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@3c82ac77
+2023-02-10 11:39:07.070 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@1a6811e2
+2023-02-10 11:39:07.071 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@1a6811e2
+2023-02-10 11:39:07.072 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.DateType@484c5a89
+2023-02-10 11:39:07.072 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.DateType@484c5a89
+2023-02-10 11:39:07.073 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.TimeType@6482dd8d
+2023-02-10 11:39:07.073 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.TimeType@6482dd8d
+2023-02-10 11:39:07.074 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.TimestampType@63a7e8f3
+2023-02-10 11:39:07.074 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@63a7e8f3
+2023-02-10 11:39:07.074 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.TimestampType@63a7e8f3
+2023-02-10 11:39:07.075 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@1e72c933
+2023-02-10 11:39:07.076 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.CalendarType@28821dc6
+2023-02-10 11:39:07.076 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@28821dc6
+2023-02-10 11:39:07.076 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@28821dc6
+2023-02-10 11:39:07.077 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@4ad5c812
+2023-02-10 11:39:07.078 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@54ef34e7
+2023-02-10 11:39:07.079 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.LocaleType@17df2c6a
+2023-02-10 11:39:07.079 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@17df2c6a
+2023-02-10 11:39:07.080 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.CurrencyType@41da2f5
+2023-02-10 11:39:07.080 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@41da2f5
+2023-02-10 11:39:07.081 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.TimeZoneType@7ea12f02
+2023-02-10 11:39:07.081 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@7ea12f02
+2023-02-10 11:39:07.081 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.ClassType@3ed3fd1c
+2023-02-10 11:39:07.081 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.ClassType@3ed3fd1c
+2023-02-10 11:39:07.082 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@684079a
+2023-02-10 11:39:07.082 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@684079a
+2023-02-10 11:39:07.083 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@7f9ca169
+2023-02-10 11:39:07.083 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BinaryType@7b37e12a
+2023-02-10 11:39:07.084 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BinaryType@7b37e12a
+2023-02-10 11:39:07.084 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BinaryType@7b37e12a
+2023-02-10 11:39:07.085 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@1d9a64a0
+2023-02-10 11:39:07.085 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@1d9a64a0
+2023-02-10 11:39:07.086 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@1d9a64a0
+2023-02-10 11:39:07.086 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.RowVersionType@26c31b3a
+2023-02-10 11:39:07.087 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.ImageType@3c3af59d
+2023-02-10 11:39:07.088 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.CharArrayType@33cbede7
+2023-02-10 11:39:07.088 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.CharArrayType@33cbede7
+2023-02-10 11:39:07.088 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.CharArrayType@33cbede7
+2023-02-10 11:39:07.089 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@4aa43201
+2023-02-10 11:39:07.089 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@4aa43201
+2023-02-10 11:39:07.089 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@4aa43201
+2023-02-10 11:39:07.089 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.TextType@7debeaf4
+2023-02-10 11:39:07.090 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.NTextType@44505a8b
+2023-02-10 11:39:07.091 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BlobType@200c77e3
+2023-02-10 11:39:07.091 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@200c77e3
+2023-02-10 11:39:07.092 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@112aef3f
+2023-02-10 11:39:07.093 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.ClobType@51491fd8
+2023-02-10 11:39:07.093 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@51491fd8
+2023-02-10 11:39:07.095 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.NClobType@43632710
+2023-02-10 11:39:07.095 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@43632710
+2023-02-10 11:39:07.095 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@42b45496
+2023-02-10 11:39:07.096 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@2448e5ed
+2023-02-10 11:39:07.097 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.SerializableType@2bd094e8
+2023-02-10 11:39:07.101 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.ObjectType@6240cc6b
+2023-02-10 11:39:07.101 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@6240cc6b
+2023-02-10 11:39:07.102 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@7a6ac6cf
+2023-02-10 11:39:07.102 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@206c7bf
+2023-02-10 11:39:07.102 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@383d6771
+2023-02-10 11:39:07.102 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@4d7200c9
+2023-02-10 11:39:07.102 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@6182eb16
+2023-02-10 11:39:07.102 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@558df3a6
+2023-02-10 11:39:07.102 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@6580089
+2023-02-10 11:39:07.102 DEBUG 13348 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@5bf13cc3
+2023-02-10 11:39:07.153  INFO 13348 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-10 11:39:07.834  INFO 13348 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-10 11:39:07.849  INFO 13348 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-02-10 11:39:07.889 DEBUG 13348 --- [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@2a93d7bf] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@1a6931cf]
+2023-02-10 11:39:08.327 DEBUG 13348 --- [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@2a93d7bf] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@7c4a749a]
+2023-02-10 11:39:08.801  INFO 13348 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-10 11:39:08.810 TRACE 13348 --- [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@7c4a749a] for TypeConfiguration
+2023-02-10 11:39:08.811  INFO 13348 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-10 11:39:09.691  INFO 13348 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-02-10 11:39:10.062  INFO 13348 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-02-10 11:39:10.128  INFO 13348 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-10 11:39:10.144  INFO 13348 --- [restartedMain] com.example.sb.ProjectInfoApplication    : Started ProjectInfoApplication in 6.264 seconds (JVM running for 7.474)
+2023-02-10 11:39:17.327  INFO 13348 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-10 11:39:17.327  INFO 13348 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-02-10 11:39:17.328  INFO 13348 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-02-10 11:39:17.476 DEBUG 13348 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select studentdet0_.roll_no as roll_no1_3_, studentdet0_.discipline_id as discipli2_3_, studentdet0_.name as name3_3_ from student_details studentdet0_
+2023-02-10 11:39:17.482 TRACE 13348 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1001]
+2023-02-10 11:39:17.488 TRACE 13348 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [2]
+2023-02-10 11:39:17.488 TRACE 13348 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student1]
+2023-02-10 11:39:17.489 TRACE 13348 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1002]
+2023-02-10 11:39:17.489 TRACE 13348 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [1]
+2023-02-10 11:39:17.490 TRACE 13348 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student2]
+2023-02-10 11:39:17.490 TRACE 13348 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1003]
+2023-02-10 11:39:17.490 TRACE 13348 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [2]
+2023-02-10 11:39:17.490 TRACE 13348 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student3]
+2023-02-10 11:39:17.490 TRACE 13348 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1004]
+2023-02-10 11:39:17.490 TRACE 13348 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [2]
+2023-02-10 11:39:17.490 TRACE 13348 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student4]
+2023-02-10 11:39:17.490 TRACE 13348 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1005]
+2023-02-10 11:39:17.490 TRACE 13348 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [2]
+2023-02-10 11:39:17.491 TRACE 13348 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student5]
+2023-02-10 11:39:17.491 TRACE 13348 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1006]
+2023-02-10 11:39:17.491 TRACE 13348 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [2]
+2023-02-10 11:39:17.491 TRACE 13348 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student6]
+2023-02-10 11:39:17.491 TRACE 13348 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1007]
+2023-02-10 11:39:17.491 TRACE 13348 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [1]
+2023-02-10 11:39:17.491 TRACE 13348 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student7]
+2023-02-10 11:39:17.491 TRACE 13348 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1008]
+2023-02-10 11:39:17.491 TRACE 13348 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [1]
+2023-02-10 11:39:17.491 TRACE 13348 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student8]
+2023-02-10 11:39:17.492 TRACE 13348 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1009]
+2023-02-10 11:39:17.492 TRACE 13348 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [1]
+2023-02-10 11:39:17.492 TRACE 13348 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student10]
+2023-02-10 11:39:17.509 DEBUG 13348 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select classdata0_.roll_no as roll_no1_0_, classdata0_.class_name as class_na2_0_, classdata0_.discipline_id as discipli3_0_, classdata0_.seat_no as seat_no4_0_ from class_data classdata0_
+2023-02-10 11:39:17.511 TRACE 13348 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1002]
+2023-02-10 11:39:17.511 TRACE 13348 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class1]
+2023-02-10 11:39:17.511 TRACE 13348 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [1]
+2023-02-10 11:39:17.511 TRACE 13348 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [42]
+2023-02-10 11:39:17.511 TRACE 13348 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1004]
+2023-02-10 11:39:17.512 TRACE 13348 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class1]
+2023-02-10 11:39:17.512 TRACE 13348 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [2]
+2023-02-10 11:39:17.512 TRACE 13348 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [10]
+2023-02-10 11:39:17.512 TRACE 13348 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1005]
+2023-02-10 11:39:17.512 TRACE 13348 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class1]
+2023-02-10 11:39:17.512 TRACE 13348 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [2]
+2023-02-10 11:39:17.512 TRACE 13348 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [13]
+2023-02-10 11:39:17.512 TRACE 13348 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1007]
+2023-02-10 11:39:17.512 TRACE 13348 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class2]
+2023-02-10 11:39:17.513 TRACE 13348 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [1]
+2023-02-10 11:39:17.513 TRACE 13348 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [11]
+2023-02-10 11:39:17.513 TRACE 13348 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1008]
+2023-02-10 11:39:17.513 TRACE 13348 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class1]
+2023-02-10 11:39:17.513 TRACE 13348 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [1]
+2023-02-10 11:39:17.513 TRACE 13348 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [22]
+2023-02-10 11:39:17.853 DEBUG 13348 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select studentdet0_.roll_no as roll_no1_3_, studentdet0_.discipline_id as discipli2_3_, studentdet0_.name as name3_3_ from student_details studentdet0_
+2023-02-10 11:39:17.855 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1001]
+2023-02-10 11:39:17.856 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [2]
+2023-02-10 11:39:17.856 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student1]
+2023-02-10 11:39:17.856 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1002]
+2023-02-10 11:39:17.856 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [1]
+2023-02-10 11:39:17.856 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student2]
+2023-02-10 11:39:17.856 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1003]
+2023-02-10 11:39:17.857 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [2]
+2023-02-10 11:39:17.857 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student3]
+2023-02-10 11:39:17.857 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1004]
+2023-02-10 11:39:17.857 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [2]
+2023-02-10 11:39:17.857 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student4]
+2023-02-10 11:39:17.857 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1005]
+2023-02-10 11:39:17.857 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [2]
+2023-02-10 11:39:17.857 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student5]
+2023-02-10 11:39:17.857 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1006]
+2023-02-10 11:39:17.858 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [2]
+2023-02-10 11:39:17.858 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student6]
+2023-02-10 11:39:17.858 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1007]
+2023-02-10 11:39:17.858 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [1]
+2023-02-10 11:39:17.858 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student7]
+2023-02-10 11:39:17.858 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1008]
+2023-02-10 11:39:17.858 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [1]
+2023-02-10 11:39:17.858 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student8]
+2023-02-10 11:39:17.858 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1009]
+2023-02-10 11:39:17.858 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [1]
+2023-02-10 11:39:17.859 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student10]
+2023-02-10 11:39:17.863 DEBUG 13348 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select classdata0_.roll_no as roll_no1_0_, classdata0_.class_name as class_na2_0_, classdata0_.discipline_id as discipli3_0_, classdata0_.seat_no as seat_no4_0_ from class_data classdata0_
+2023-02-10 11:39:17.867 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1002]
+2023-02-10 11:39:17.867 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class1]
+2023-02-10 11:39:17.867 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [1]
+2023-02-10 11:39:17.868 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [42]
+2023-02-10 11:39:17.868 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1004]
+2023-02-10 11:39:17.868 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class1]
+2023-02-10 11:39:17.868 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [2]
+2023-02-10 11:39:17.868 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [10]
+2023-02-10 11:39:17.868 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1005]
+2023-02-10 11:39:17.868 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class1]
+2023-02-10 11:39:17.868 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [2]
+2023-02-10 11:39:17.869 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [13]
+2023-02-10 11:39:17.869 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1007]
+2023-02-10 11:39:17.869 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class2]
+2023-02-10 11:39:17.869 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [1]
+2023-02-10 11:39:17.869 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [11]
+2023-02-10 11:39:17.869 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1008]
+2023-02-10 11:39:17.869 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class1]
+2023-02-10 11:39:17.869 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [1]
+2023-02-10 11:39:17.869 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [22]
+2023-02-10 11:39:25.036 DEBUG 13348 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select classdata0_.roll_no as roll_no1_0_0_, classdata0_.class_name as class_na2_0_0_, classdata0_.discipline_id as discipli3_0_0_, classdata0_.seat_no as seat_no4_0_0_ from class_data classdata0_ where classdata0_.roll_no=?
+2023-02-10 11:39:25.038 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1004]
+2023-02-10 11:39:25.043 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_0_] : [VARCHAR]) - [class1]
+2023-02-10 11:39:25.044 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_0_] : [INTEGER]) - [2]
+2023-02-10 11:39:25.044 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_0_] : [INTEGER]) - [10]
+2023-02-10 11:39:25.050 DEBUG 13348 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select classdata0_.roll_no as roll_no1_0_, classdata0_.class_name as class_na2_0_, classdata0_.discipline_id as discipli3_0_, classdata0_.seat_no as seat_no4_0_ from class_data classdata0_
+2023-02-10 11:39:25.051 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1002]
+2023-02-10 11:39:25.052 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class1]
+2023-02-10 11:39:25.052 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [1]
+2023-02-10 11:39:25.052 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [42]
+2023-02-10 11:39:25.052 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1004]
+2023-02-10 11:39:25.052 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1005]
+2023-02-10 11:39:25.053 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class1]
+2023-02-10 11:39:25.053 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [2]
+2023-02-10 11:39:25.053 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [13]
+2023-02-10 11:39:25.053 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1007]
+2023-02-10 11:39:25.053 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class2]
+2023-02-10 11:39:25.054 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [1]
+2023-02-10 11:39:25.054 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [11]
+2023-02-10 11:39:25.054 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1008]
+2023-02-10 11:39:25.054 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class1]
+2023-02-10 11:39:25.054 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [1]
+2023-02-10 11:39:25.054 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [22]
+2023-02-10 11:39:25.063 DEBUG 13348 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select studentdet0_.roll_no as roll_no1_3_0_, studentdet0_.discipline_id as discipli2_3_0_, studentdet0_.name as name3_3_0_ from student_details studentdet0_ where studentdet0_.roll_no=?
+2023-02-10 11:39:25.064 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1004]
+2023-02-10 11:39:25.067 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_0_] : [INTEGER]) - [2]
+2023-02-10 11:39:25.068 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_0_] : [VARCHAR]) - [student4]
+2023-02-10 11:39:25.076 DEBUG 13348 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select classdata0_.roll_no as roll_no1_0_, classdata0_.class_name as class_na2_0_, classdata0_.discipline_id as discipli3_0_, classdata0_.seat_no as seat_no4_0_ from class_data classdata0_
+2023-02-10 11:39:25.078 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1002]
+2023-02-10 11:39:25.078 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1004]
+2023-02-10 11:39:25.078 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1005]
+2023-02-10 11:39:25.079 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1007]
+2023-02-10 11:39:25.079 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1008]
+2023-02-10 11:39:25.121 DEBUG 13348 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : delete from class_data where roll_no=?
+2023-02-10 11:39:25.121 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1004]
+2023-02-10 11:39:25.145 DEBUG 13348 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select classdata0_.roll_no as roll_no1_0_0_, classdata0_.class_name as class_na2_0_0_, classdata0_.discipline_id as discipli3_0_0_, classdata0_.seat_no as seat_no4_0_0_ from class_data classdata0_ where classdata0_.roll_no=?
+2023-02-10 11:39:25.146 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1004]
+2023-02-10 11:39:25.151 DEBUG 13348 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : insert into class_data (class_name, discipline_id, seat_no, roll_no) values (?, ?, ?, ?)
+2023-02-10 11:39:25.153 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [class1]
+2023-02-10 11:39:25.154 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [INTEGER] - [2]
+2023-02-10 11:39:25.155 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [INTEGER] - [10]
+2023-02-10 11:39:25.155 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BIGINT] - [1004]
+2023-02-10 11:39:25.171 DEBUG 13348 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select classdata0_.roll_no as roll_no1_0_, classdata0_.class_name as class_na2_0_, classdata0_.discipline_id as discipli3_0_, classdata0_.seat_no as seat_no4_0_ from class_data classdata0_
+2023-02-10 11:39:25.173 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1002]
+2023-02-10 11:39:25.173 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1004]
+2023-02-10 11:39:25.173 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1005]
+2023-02-10 11:39:25.174 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1007]
+2023-02-10 11:39:25.174 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1008]
+2023-02-10 11:39:25.179 DEBUG 13348 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select studentdet0_.roll_no as roll_no1_3_0_, studentdet0_.discipline_id as discipli2_3_0_, studentdet0_.name as name3_3_0_ from student_details studentdet0_ where studentdet0_.roll_no=?
+2023-02-10 11:39:25.180 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1005]
+2023-02-10 11:39:25.181 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_0_] : [INTEGER]) - [2]
+2023-02-10 11:39:25.182 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_0_] : [VARCHAR]) - [student5]
+2023-02-10 11:39:25.187 DEBUG 13348 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select classdata0_.roll_no as roll_no1_0_, classdata0_.class_name as class_na2_0_, classdata0_.discipline_id as discipli3_0_, classdata0_.seat_no as seat_no4_0_ from class_data classdata0_
+2023-02-10 11:39:25.189 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1002]
+2023-02-10 11:39:25.190 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1004]
+2023-02-10 11:39:25.190 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1005]
+2023-02-10 11:39:25.190 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1007]
+2023-02-10 11:39:25.190 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1008]
+2023-02-10 11:39:25.195 DEBUG 13348 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : delete from class_data where roll_no=?
+2023-02-10 11:39:25.195 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1005]
+2023-02-10 11:39:25.208 DEBUG 13348 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select classdata0_.roll_no as roll_no1_0_0_, classdata0_.class_name as class_na2_0_0_, classdata0_.discipline_id as discipli3_0_0_, classdata0_.seat_no as seat_no4_0_0_ from class_data classdata0_ where classdata0_.roll_no=?
+2023-02-10 11:39:25.209 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1005]
+2023-02-10 11:39:25.212 DEBUG 13348 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : insert into class_data (class_name, discipline_id, seat_no, roll_no) values (?, ?, ?, ?)
+2023-02-10 11:39:25.212 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [class1]
+2023-02-10 11:39:25.212 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [INTEGER] - [2]
+2023-02-10 11:39:25.212 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [INTEGER] - [13]
+2023-02-10 11:39:25.212 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BIGINT] - [1005]
+2023-02-10 11:39:25.230 DEBUG 13348 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select classdata0_.roll_no as roll_no1_0_, classdata0_.class_name as class_na2_0_, classdata0_.discipline_id as discipli3_0_, classdata0_.seat_no as seat_no4_0_ from class_data classdata0_
+2023-02-10 11:39:25.231 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1002]
+2023-02-10 11:39:25.232 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1004]
+2023-02-10 11:39:25.232 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1005]
+2023-02-10 11:39:25.232 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1007]
+2023-02-10 11:39:25.232 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1008]
+2023-02-10 11:39:25.237 DEBUG 13348 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select studentdet0_.roll_no as roll_no1_3_0_, studentdet0_.discipline_id as discipli2_3_0_, studentdet0_.name as name3_3_0_ from student_details studentdet0_ where studentdet0_.roll_no=?
+2023-02-10 11:39:25.237 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1008]
+2023-02-10 11:39:25.239 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_0_] : [INTEGER]) - [1]
+2023-02-10 11:39:25.239 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_0_] : [VARCHAR]) - [student8]
+2023-02-10 11:39:25.244 DEBUG 13348 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select classdata0_.roll_no as roll_no1_0_, classdata0_.class_name as class_na2_0_, classdata0_.discipline_id as discipli3_0_, classdata0_.seat_no as seat_no4_0_ from class_data classdata0_
+2023-02-10 11:39:25.245 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1002]
+2023-02-10 11:39:25.245 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1004]
+2023-02-10 11:39:25.246 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1005]
+2023-02-10 11:39:25.246 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1007]
+2023-02-10 11:39:25.246 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1008]
+2023-02-10 11:39:25.252 DEBUG 13348 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : delete from class_data where roll_no=?
+2023-02-10 11:39:25.252 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1008]
+2023-02-10 11:39:25.266 DEBUG 13348 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select classdata0_.roll_no as roll_no1_0_0_, classdata0_.class_name as class_na2_0_0_, classdata0_.discipline_id as discipli3_0_0_, classdata0_.seat_no as seat_no4_0_0_ from class_data classdata0_ where classdata0_.roll_no=?
+2023-02-10 11:39:25.267 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1008]
+2023-02-10 11:39:25.270 DEBUG 13348 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : insert into class_data (class_name, discipline_id, seat_no, roll_no) values (?, ?, ?, ?)
+2023-02-10 11:39:25.271 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [class1]
+2023-02-10 11:39:25.272 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [INTEGER] - [1]
+2023-02-10 11:39:25.272 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [INTEGER] - [22]
+2023-02-10 11:39:25.272 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BIGINT] - [1008]
+2023-02-10 11:39:25.289 DEBUG 13348 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select classdata0_.roll_no as roll_no1_0_, classdata0_.class_name as class_na2_0_, classdata0_.discipline_id as discipli3_0_, classdata0_.seat_no as seat_no4_0_ from class_data classdata0_
+2023-02-10 11:39:25.292 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1002]
+2023-02-10 11:39:25.292 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1004]
+2023-02-10 11:39:25.292 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1005]
+2023-02-10 11:39:25.292 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1007]
+2023-02-10 11:39:25.293 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1008]
+2023-02-10 11:39:25.296 DEBUG 13348 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select studentdet0_.roll_no as roll_no1_3_0_, studentdet0_.discipline_id as discipli2_3_0_, studentdet0_.name as name3_3_0_ from student_details studentdet0_ where studentdet0_.roll_no=?
+2023-02-10 11:39:25.297 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1002]
+2023-02-10 11:39:25.298 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_0_] : [INTEGER]) - [1]
+2023-02-10 11:39:25.299 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_0_] : [VARCHAR]) - [student2]
+2023-02-10 11:39:25.302 DEBUG 13348 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select classdata0_.roll_no as roll_no1_0_, classdata0_.class_name as class_na2_0_, classdata0_.discipline_id as discipli3_0_, classdata0_.seat_no as seat_no4_0_ from class_data classdata0_
+2023-02-10 11:39:25.303 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1002]
+2023-02-10 11:39:25.303 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1004]
+2023-02-10 11:39:25.303 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1005]
+2023-02-10 11:39:25.303 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1007]
+2023-02-10 11:39:25.304 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1008]
+2023-02-10 11:39:25.307 DEBUG 13348 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : delete from class_data where roll_no=?
+2023-02-10 11:39:25.307 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1002]
+2023-02-10 11:39:25.322 DEBUG 13348 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select classdata0_.roll_no as roll_no1_0_0_, classdata0_.class_name as class_na2_0_0_, classdata0_.discipline_id as discipli3_0_0_, classdata0_.seat_no as seat_no4_0_0_ from class_data classdata0_ where classdata0_.roll_no=?
+2023-02-10 11:39:25.323 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1002]
+2023-02-10 11:39:25.326 DEBUG 13348 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : insert into class_data (class_name, discipline_id, seat_no, roll_no) values (?, ?, ?, ?)
+2023-02-10 11:39:25.327 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [class1]
+2023-02-10 11:39:25.327 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [INTEGER] - [1]
+2023-02-10 11:39:25.327 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [INTEGER] - [42]
+2023-02-10 11:39:25.327 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BIGINT] - [1002]
+2023-02-10 11:39:25.355 DEBUG 13348 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select studentdet0_.roll_no as roll_no1_3_, studentdet0_.discipline_id as discipli2_3_, studentdet0_.name as name3_3_ from student_details studentdet0_
+2023-02-10 11:39:25.358 TRACE 13348 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1001]
+2023-02-10 11:39:25.359 TRACE 13348 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [2]
+2023-02-10 11:39:25.359 TRACE 13348 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student1]
+2023-02-10 11:39:25.359 TRACE 13348 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1002]
+2023-02-10 11:39:25.359 TRACE 13348 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [1]
+2023-02-10 11:39:25.359 TRACE 13348 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student2]
+2023-02-10 11:39:25.359 TRACE 13348 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1003]
+2023-02-10 11:39:25.359 TRACE 13348 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [2]
+2023-02-10 11:39:25.359 TRACE 13348 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student3]
+2023-02-10 11:39:25.359 TRACE 13348 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1004]
+2023-02-10 11:39:25.359 TRACE 13348 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [2]
+2023-02-10 11:39:25.359 TRACE 13348 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student4]
+2023-02-10 11:39:25.361 TRACE 13348 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1005]
+2023-02-10 11:39:25.361 TRACE 13348 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [2]
+2023-02-10 11:39:25.361 TRACE 13348 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student5]
+2023-02-10 11:39:25.362 TRACE 13348 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1006]
+2023-02-10 11:39:25.362 TRACE 13348 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [2]
+2023-02-10 11:39:25.362 TRACE 13348 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student6]
+2023-02-10 11:39:25.362 TRACE 13348 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1007]
+2023-02-10 11:39:25.363 TRACE 13348 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [1]
+2023-02-10 11:39:25.363 TRACE 13348 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student7]
+2023-02-10 11:39:25.363 TRACE 13348 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1008]
+2023-02-10 11:39:25.363 TRACE 13348 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [1]
+2023-02-10 11:39:25.363 TRACE 13348 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student8]
+2023-02-10 11:39:25.363 TRACE 13348 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1009]
+2023-02-10 11:39:25.364 TRACE 13348 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [1]
+2023-02-10 11:39:25.364 TRACE 13348 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student10]
+2023-02-10 11:39:25.371 DEBUG 13348 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select classdata0_.roll_no as roll_no1_0_, classdata0_.class_name as class_na2_0_, classdata0_.discipline_id as discipli3_0_, classdata0_.seat_no as seat_no4_0_ from class_data classdata0_
+2023-02-10 11:39:25.374 TRACE 13348 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1002]
+2023-02-10 11:39:25.374 TRACE 13348 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class1]
+2023-02-10 11:39:25.375 TRACE 13348 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [1]
+2023-02-10 11:39:25.375 TRACE 13348 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [42]
+2023-02-10 11:39:25.375 TRACE 13348 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1004]
+2023-02-10 11:39:25.375 TRACE 13348 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class1]
+2023-02-10 11:39:25.375 TRACE 13348 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [2]
+2023-02-10 11:39:25.375 TRACE 13348 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [10]
+2023-02-10 11:39:25.375 TRACE 13348 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1005]
+2023-02-10 11:39:25.376 TRACE 13348 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class1]
+2023-02-10 11:39:25.376 TRACE 13348 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [2]
+2023-02-10 11:39:25.376 TRACE 13348 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [13]
+2023-02-10 11:39:25.376 TRACE 13348 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1007]
+2023-02-10 11:39:25.376 TRACE 13348 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class2]
+2023-02-10 11:39:25.377 TRACE 13348 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [1]
+2023-02-10 11:39:25.377 TRACE 13348 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [11]
+2023-02-10 11:39:25.377 TRACE 13348 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1008]
+2023-02-10 11:39:25.377 TRACE 13348 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class1]
+2023-02-10 11:39:25.377 TRACE 13348 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [1]
+2023-02-10 11:39:25.377 TRACE 13348 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [22]
+2023-02-10 11:39:25.427 DEBUG 13348 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select studentdet0_.roll_no as roll_no1_3_, studentdet0_.discipline_id as discipli2_3_, studentdet0_.name as name3_3_ from student_details studentdet0_
+2023-02-10 11:39:25.429 TRACE 13348 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1001]
+2023-02-10 11:39:25.430 TRACE 13348 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [2]
+2023-02-10 11:39:25.430 TRACE 13348 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student1]
+2023-02-10 11:39:25.430 TRACE 13348 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1002]
+2023-02-10 11:39:25.430 TRACE 13348 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [1]
+2023-02-10 11:39:25.430 TRACE 13348 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student2]
+2023-02-10 11:39:25.430 TRACE 13348 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1003]
+2023-02-10 11:39:25.431 TRACE 13348 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [2]
+2023-02-10 11:39:25.431 TRACE 13348 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student3]
+2023-02-10 11:39:25.431 TRACE 13348 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1004]
+2023-02-10 11:39:25.431 TRACE 13348 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [2]
+2023-02-10 11:39:25.431 TRACE 13348 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student4]
+2023-02-10 11:39:25.431 TRACE 13348 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1005]
+2023-02-10 11:39:25.431 TRACE 13348 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [2]
+2023-02-10 11:39:25.432 TRACE 13348 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student5]
+2023-02-10 11:39:25.432 TRACE 13348 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1006]
+2023-02-10 11:39:25.432 TRACE 13348 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [2]
+2023-02-10 11:39:25.432 TRACE 13348 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student6]
+2023-02-10 11:39:25.432 TRACE 13348 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1007]
+2023-02-10 11:39:25.433 TRACE 13348 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [1]
+2023-02-10 11:39:25.433 TRACE 13348 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student7]
+2023-02-10 11:39:25.433 TRACE 13348 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1008]
+2023-02-10 11:39:25.433 TRACE 13348 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [1]
+2023-02-10 11:39:25.433 TRACE 13348 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student8]
+2023-02-10 11:39:25.433 TRACE 13348 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1009]
+2023-02-10 11:39:25.433 TRACE 13348 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [1]
+2023-02-10 11:39:25.433 TRACE 13348 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student10]
+2023-02-10 11:39:25.441 DEBUG 13348 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select classdata0_.roll_no as roll_no1_0_, classdata0_.class_name as class_na2_0_, classdata0_.discipline_id as discipli3_0_, classdata0_.seat_no as seat_no4_0_ from class_data classdata0_
+2023-02-10 11:39:25.443 TRACE 13348 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1002]
+2023-02-10 11:39:25.444 TRACE 13348 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class1]
+2023-02-10 11:39:25.444 TRACE 13348 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [1]
+2023-02-10 11:39:25.444 TRACE 13348 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [42]
+2023-02-10 11:39:25.445 TRACE 13348 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1004]
+2023-02-10 11:39:25.445 TRACE 13348 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class1]
+2023-02-10 11:39:25.445 TRACE 13348 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [2]
+2023-02-10 11:39:25.446 TRACE 13348 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [10]
+2023-02-10 11:39:25.446 TRACE 13348 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1005]
+2023-02-10 11:39:25.446 TRACE 13348 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class1]
+2023-02-10 11:39:25.446 TRACE 13348 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [2]
+2023-02-10 11:39:25.446 TRACE 13348 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [13]
+2023-02-10 11:39:25.446 TRACE 13348 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1007]
+2023-02-10 11:39:25.447 TRACE 13348 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class2]
+2023-02-10 11:39:25.447 TRACE 13348 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [1]
+2023-02-10 11:39:25.448 TRACE 13348 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [11]
+2023-02-10 11:39:25.448 TRACE 13348 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1008]
+2023-02-10 11:39:25.448 TRACE 13348 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class1]
+2023-02-10 11:39:25.448 TRACE 13348 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [1]
+2023-02-10 11:39:25.449 TRACE 13348 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [22]
+2023-02-10 11:39:32.364 DEBUG 13348 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : select classdata0_.roll_no as roll_no1_0_, classdata0_.class_name as class_na2_0_, classdata0_.discipline_id as discipli3_0_, classdata0_.seat_no as seat_no4_0_ from class_data classdata0_
+2023-02-10 11:39:32.369 TRACE 13348 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1002]
+2023-02-10 11:39:32.370 TRACE 13348 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class1]
+2023-02-10 11:39:32.370 TRACE 13348 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [1]
+2023-02-10 11:39:32.370 TRACE 13348 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [42]
+2023-02-10 11:39:32.370 TRACE 13348 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1004]
+2023-02-10 11:39:32.370 TRACE 13348 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class1]
+2023-02-10 11:39:32.370 TRACE 13348 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [2]
+2023-02-10 11:39:32.371 TRACE 13348 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [10]
+2023-02-10 11:39:32.371 TRACE 13348 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1005]
+2023-02-10 11:39:32.371 TRACE 13348 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class1]
+2023-02-10 11:39:32.371 TRACE 13348 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [2]
+2023-02-10 11:39:32.371 TRACE 13348 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [13]
+2023-02-10 11:39:32.371 TRACE 13348 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1007]
+2023-02-10 11:39:32.371 TRACE 13348 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class2]
+2023-02-10 11:39:32.371 TRACE 13348 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [1]
+2023-02-10 11:39:32.371 TRACE 13348 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [11]
+2023-02-10 11:39:32.371 TRACE 13348 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1008]
+2023-02-10 11:39:32.372 TRACE 13348 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class1]
+2023-02-10 11:39:32.372 TRACE 13348 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [1]
+2023-02-10 11:39:32.372 TRACE 13348 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [22]
+2023-02-10 11:39:32.378 DEBUG 13348 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : select classdetai0_.class_name as class_na1_1_, classdetai0_.availability as availabi2_1_ from class_details classdetai0_
+2023-02-10 11:39:32.380 TRACE 13348 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na1_1_] : [VARCHAR]) - [class1]
+2023-02-10 11:39:32.381 TRACE 13348 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabi2_1_] : [INTEGER]) - [95]
+2023-02-10 11:39:32.381 TRACE 13348 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na1_1_] : [VARCHAR]) - [class2]
+2023-02-10 11:39:32.381 TRACE 13348 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabi2_1_] : [INTEGER]) - [100]
+2023-02-10 11:39:32.397 DEBUG 13348 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : update class_details set availability=? where class_name=?
+2023-02-10 11:39:32.398 TRACE 13348 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [96]
+2023-02-10 11:39:32.398 TRACE 13348 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [class1]
+2023-02-10 11:39:32.421 DEBUG 13348 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : update class_details set availability=? where class_name=?
+2023-02-10 11:39:32.421 TRACE 13348 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [99]
+2023-02-10 11:39:32.422 TRACE 13348 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [class2]
+2023-02-10 11:39:34.174 DEBUG 13348 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select studentdet0_.roll_no as roll_no1_3_, studentdet0_.discipline_id as discipli2_3_, studentdet0_.name as name3_3_ from student_details studentdet0_
+2023-02-10 11:39:34.177 TRACE 13348 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1001]
+2023-02-10 11:39:34.178 TRACE 13348 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [2]
+2023-02-10 11:39:34.178 TRACE 13348 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student1]
+2023-02-10 11:39:34.178 TRACE 13348 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1002]
+2023-02-10 11:39:34.178 TRACE 13348 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [1]
+2023-02-10 11:39:34.178 TRACE 13348 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student2]
+2023-02-10 11:39:34.178 TRACE 13348 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1003]
+2023-02-10 11:39:34.178 TRACE 13348 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [2]
+2023-02-10 11:39:34.178 TRACE 13348 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student3]
+2023-02-10 11:39:34.178 TRACE 13348 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1004]
+2023-02-10 11:39:34.178 TRACE 13348 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [2]
+2023-02-10 11:39:34.179 TRACE 13348 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student4]
+2023-02-10 11:39:34.179 TRACE 13348 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1005]
+2023-02-10 11:39:34.179 TRACE 13348 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [2]
+2023-02-10 11:39:34.179 TRACE 13348 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student5]
+2023-02-10 11:39:34.179 TRACE 13348 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1006]
+2023-02-10 11:39:34.179 TRACE 13348 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [2]
+2023-02-10 11:39:34.179 TRACE 13348 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student6]
+2023-02-10 11:39:34.179 TRACE 13348 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1007]
+2023-02-10 11:39:34.179 TRACE 13348 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [1]
+2023-02-10 11:39:34.179 TRACE 13348 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student7]
+2023-02-10 11:39:34.179 TRACE 13348 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1008]
+2023-02-10 11:39:34.180 TRACE 13348 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [1]
+2023-02-10 11:39:34.180 TRACE 13348 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student8]
+2023-02-10 11:39:34.180 TRACE 13348 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1009]
+2023-02-10 11:39:34.180 TRACE 13348 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [1]
+2023-02-10 11:39:34.181 TRACE 13348 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student10]
+2023-02-10 11:39:34.188 DEBUG 13348 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select classdata0_.roll_no as roll_no1_0_, classdata0_.class_name as class_na2_0_, classdata0_.discipline_id as discipli3_0_, classdata0_.seat_no as seat_no4_0_ from class_data classdata0_
+2023-02-10 11:39:34.190 TRACE 13348 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1002]
+2023-02-10 11:39:34.190 TRACE 13348 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class1]
+2023-02-10 11:39:34.190 TRACE 13348 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [1]
+2023-02-10 11:39:34.190 TRACE 13348 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [42]
+2023-02-10 11:39:34.191 TRACE 13348 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1004]
+2023-02-10 11:39:34.191 TRACE 13348 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class1]
+2023-02-10 11:39:34.191 TRACE 13348 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [2]
+2023-02-10 11:39:34.191 TRACE 13348 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [10]
+2023-02-10 11:39:34.191 TRACE 13348 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1005]
+2023-02-10 11:39:34.191 TRACE 13348 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class1]
+2023-02-10 11:39:34.191 TRACE 13348 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [2]
+2023-02-10 11:39:34.192 TRACE 13348 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [13]
+2023-02-10 11:39:34.192 TRACE 13348 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1007]
+2023-02-10 11:39:34.192 TRACE 13348 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class2]
+2023-02-10 11:39:34.192 TRACE 13348 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [1]
+2023-02-10 11:39:34.192 TRACE 13348 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [11]
+2023-02-10 11:39:34.192 TRACE 13348 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1008]
+2023-02-10 11:39:34.192 TRACE 13348 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class1]
+2023-02-10 11:39:34.192 TRACE 13348 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [1]
+2023-02-10 11:39:34.192 TRACE 13348 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [22]
+2023-02-10 11:39:34.228 DEBUG 13348 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : select studentdet0_.roll_no as roll_no1_3_, studentdet0_.discipline_id as discipli2_3_, studentdet0_.name as name3_3_ from student_details studentdet0_
+2023-02-10 11:39:34.230 TRACE 13348 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1001]
+2023-02-10 11:39:34.230 TRACE 13348 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [2]
+2023-02-10 11:39:34.230 TRACE 13348 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student1]
+2023-02-10 11:39:34.230 TRACE 13348 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1002]
+2023-02-10 11:39:34.231 TRACE 13348 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [1]
+2023-02-10 11:39:34.231 TRACE 13348 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student2]
+2023-02-10 11:39:34.231 TRACE 13348 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1003]
+2023-02-10 11:39:34.231 TRACE 13348 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [2]
+2023-02-10 11:39:34.231 TRACE 13348 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student3]
+2023-02-10 11:39:34.231 TRACE 13348 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1004]
+2023-02-10 11:39:34.231 TRACE 13348 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [2]
+2023-02-10 11:39:34.231 TRACE 13348 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student4]
+2023-02-10 11:39:34.231 TRACE 13348 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1005]
+2023-02-10 11:39:34.231 TRACE 13348 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [2]
+2023-02-10 11:39:34.231 TRACE 13348 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student5]
+2023-02-10 11:39:34.231 TRACE 13348 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1006]
+2023-02-10 11:39:34.231 TRACE 13348 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [2]
+2023-02-10 11:39:34.232 TRACE 13348 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student6]
+2023-02-10 11:39:34.232 TRACE 13348 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1007]
+2023-02-10 11:39:34.232 TRACE 13348 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [1]
+2023-02-10 11:39:34.232 TRACE 13348 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student7]
+2023-02-10 11:39:34.232 TRACE 13348 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1008]
+2023-02-10 11:39:34.232 TRACE 13348 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [1]
+2023-02-10 11:39:34.232 TRACE 13348 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student8]
+2023-02-10 11:39:34.232 TRACE 13348 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1009]
+2023-02-10 11:39:34.232 TRACE 13348 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [1]
+2023-02-10 11:39:34.232 TRACE 13348 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student10]
+2023-02-10 11:39:34.236 DEBUG 13348 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : select classdata0_.roll_no as roll_no1_0_, classdata0_.class_name as class_na2_0_, classdata0_.discipline_id as discipli3_0_, classdata0_.seat_no as seat_no4_0_ from class_data classdata0_
+2023-02-10 11:39:34.238 TRACE 13348 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1002]
+2023-02-10 11:39:34.238 TRACE 13348 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class1]
+2023-02-10 11:39:34.238 TRACE 13348 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [1]
+2023-02-10 11:39:34.238 TRACE 13348 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [42]
+2023-02-10 11:39:34.238 TRACE 13348 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1004]
+2023-02-10 11:39:34.238 TRACE 13348 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class1]
+2023-02-10 11:39:34.239 TRACE 13348 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [2]
+2023-02-10 11:39:34.239 TRACE 13348 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [10]
+2023-02-10 11:39:34.239 TRACE 13348 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1005]
+2023-02-10 11:39:34.239 TRACE 13348 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class1]
+2023-02-10 11:39:34.239 TRACE 13348 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [2]
+2023-02-10 11:39:34.239 TRACE 13348 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [13]
+2023-02-10 11:39:34.239 TRACE 13348 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1007]
+2023-02-10 11:39:34.240 TRACE 13348 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class2]
+2023-02-10 11:39:34.240 TRACE 13348 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [1]
+2023-02-10 11:39:34.240 TRACE 13348 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [11]
+2023-02-10 11:39:34.240 TRACE 13348 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1008]
+2023-02-10 11:39:34.240 TRACE 13348 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class1]
+2023-02-10 11:39:34.240 TRACE 13348 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [1]
+2023-02-10 11:39:34.240 TRACE 13348 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [22]
+2023-02-10 11:40:04.960 DEBUG 13348 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : select classdata0_.roll_no as roll_no1_0_, classdata0_.class_name as class_na2_0_, classdata0_.discipline_id as discipli3_0_, classdata0_.seat_no as seat_no4_0_ from class_data classdata0_
+2023-02-10 11:40:04.962 TRACE 13348 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1002]
+2023-02-10 11:40:04.962 TRACE 13348 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class1]
+2023-02-10 11:40:04.962 TRACE 13348 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [1]
+2023-02-10 11:40:04.962 TRACE 13348 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [42]
+2023-02-10 11:40:04.963 TRACE 13348 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1004]
+2023-02-10 11:40:04.963 TRACE 13348 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class1]
+2023-02-10 11:40:04.963 TRACE 13348 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [2]
+2023-02-10 11:40:04.963 TRACE 13348 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [10]
+2023-02-10 11:40:04.963 TRACE 13348 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1005]
+2023-02-10 11:40:04.963 TRACE 13348 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class1]
+2023-02-10 11:40:04.963 TRACE 13348 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [2]
+2023-02-10 11:40:04.963 TRACE 13348 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [13]
+2023-02-10 11:40:04.963 TRACE 13348 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1007]
+2023-02-10 11:40:04.963 TRACE 13348 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class2]
+2023-02-10 11:40:04.963 TRACE 13348 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [1]
+2023-02-10 11:40:04.963 TRACE 13348 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [11]
+2023-02-10 11:40:04.963 TRACE 13348 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1008]
+2023-02-10 11:40:04.963 TRACE 13348 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class1]
+2023-02-10 11:40:04.963 TRACE 13348 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [1]
+2023-02-10 11:40:04.963 TRACE 13348 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [22]
+2023-02-10 11:40:04.971 DEBUG 13348 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : select classdetai0_.class_name as class_na1_1_, classdetai0_.availability as availabi2_1_ from class_details classdetai0_
+2023-02-10 11:40:04.972 TRACE 13348 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na1_1_] : [VARCHAR]) - [class1]
+2023-02-10 11:40:04.973 TRACE 13348 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabi2_1_] : [INTEGER]) - [96]
+2023-02-10 11:40:04.973 TRACE 13348 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na1_1_] : [VARCHAR]) - [class2]
+2023-02-10 11:40:04.973 TRACE 13348 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabi2_1_] : [INTEGER]) - [99]
+2023-02-10 11:40:06.487 DEBUG 13348 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select studentdet0_.roll_no as roll_no1_3_, studentdet0_.discipline_id as discipli2_3_, studentdet0_.name as name3_3_ from student_details studentdet0_
+2023-02-10 11:40:06.488 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1001]
+2023-02-10 11:40:06.489 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [2]
+2023-02-10 11:40:06.489 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student1]
+2023-02-10 11:40:06.489 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1002]
+2023-02-10 11:40:06.489 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [1]
+2023-02-10 11:40:06.489 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student2]
+2023-02-10 11:40:06.489 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1003]
+2023-02-10 11:40:06.489 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [2]
+2023-02-10 11:40:06.489 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student3]
+2023-02-10 11:40:06.489 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1004]
+2023-02-10 11:40:06.489 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [2]
+2023-02-10 11:40:06.489 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student4]
+2023-02-10 11:40:06.490 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1005]
+2023-02-10 11:40:06.490 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [2]
+2023-02-10 11:40:06.490 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student5]
+2023-02-10 11:40:06.490 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1006]
+2023-02-10 11:40:06.490 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [2]
+2023-02-10 11:40:06.490 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student6]
+2023-02-10 11:40:06.490 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1007]
+2023-02-10 11:40:06.490 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [1]
+2023-02-10 11:40:06.490 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student7]
+2023-02-10 11:40:06.491 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1008]
+2023-02-10 11:40:06.491 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [1]
+2023-02-10 11:40:06.491 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student8]
+2023-02-10 11:40:06.491 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1009]
+2023-02-10 11:40:06.491 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [1]
+2023-02-10 11:40:06.491 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student10]
+2023-02-10 11:40:06.495 DEBUG 13348 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select classdata0_.roll_no as roll_no1_0_, classdata0_.class_name as class_na2_0_, classdata0_.discipline_id as discipli3_0_, classdata0_.seat_no as seat_no4_0_ from class_data classdata0_
+2023-02-10 11:40:06.497 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1002]
+2023-02-10 11:40:06.497 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class1]
+2023-02-10 11:40:06.497 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [1]
+2023-02-10 11:40:06.497 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [42]
+2023-02-10 11:40:06.497 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1004]
+2023-02-10 11:40:06.498 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class1]
+2023-02-10 11:40:06.498 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [2]
+2023-02-10 11:40:06.498 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [10]
+2023-02-10 11:40:06.498 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1005]
+2023-02-10 11:40:06.498 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class1]
+2023-02-10 11:40:06.498 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [2]
+2023-02-10 11:40:06.498 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [13]
+2023-02-10 11:40:06.498 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1007]
+2023-02-10 11:40:06.498 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class2]
+2023-02-10 11:40:06.499 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [1]
+2023-02-10 11:40:06.499 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [11]
+2023-02-10 11:40:06.499 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1008]
+2023-02-10 11:40:06.499 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class1]
+2023-02-10 11:40:06.499 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [1]
+2023-02-10 11:40:06.499 TRACE 13348 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [22]
+2023-02-10 11:40:06.545 DEBUG 13348 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select studentdet0_.roll_no as roll_no1_3_, studentdet0_.discipline_id as discipli2_3_, studentdet0_.name as name3_3_ from student_details studentdet0_
+2023-02-10 11:40:06.546 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1001]
+2023-02-10 11:40:06.547 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [2]
+2023-02-10 11:40:06.547 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student1]
+2023-02-10 11:40:06.547 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1002]
+2023-02-10 11:40:06.547 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [1]
+2023-02-10 11:40:06.547 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student2]
+2023-02-10 11:40:06.547 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1003]
+2023-02-10 11:40:06.547 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [2]
+2023-02-10 11:40:06.547 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student3]
+2023-02-10 11:40:06.547 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1004]
+2023-02-10 11:40:06.547 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [2]
+2023-02-10 11:40:06.547 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student4]
+2023-02-10 11:40:06.547 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1005]
+2023-02-10 11:40:06.548 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [2]
+2023-02-10 11:40:06.548 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student5]
+2023-02-10 11:40:06.548 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1006]
+2023-02-10 11:40:06.548 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [2]
+2023-02-10 11:40:06.548 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student6]
+2023-02-10 11:40:06.548 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1007]
+2023-02-10 11:40:06.548 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [1]
+2023-02-10 11:40:06.548 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student7]
+2023-02-10 11:40:06.548 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1008]
+2023-02-10 11:40:06.548 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [1]
+2023-02-10 11:40:06.548 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student8]
+2023-02-10 11:40:06.548 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_3_] : [BIGINT]) - [1009]
+2023-02-10 11:40:06.548 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli2_3_] : [INTEGER]) - [1]
+2023-02-10 11:40:06.548 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_3_] : [VARCHAR]) - [student10]
+2023-02-10 11:40:06.552 DEBUG 13348 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select classdata0_.roll_no as roll_no1_0_, classdata0_.class_name as class_na2_0_, classdata0_.discipline_id as discipli3_0_, classdata0_.seat_no as seat_no4_0_ from class_data classdata0_
+2023-02-10 11:40:06.554 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1002]
+2023-02-10 11:40:06.555 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class1]
+2023-02-10 11:40:06.555 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [1]
+2023-02-10 11:40:06.555 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [42]
+2023-02-10 11:40:06.555 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1004]
+2023-02-10 11:40:06.555 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class1]
+2023-02-10 11:40:06.555 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [2]
+2023-02-10 11:40:06.555 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [10]
+2023-02-10 11:40:06.555 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1005]
+2023-02-10 11:40:06.555 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class1]
+2023-02-10 11:40:06.555 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [2]
+2023-02-10 11:40:06.555 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [13]
+2023-02-10 11:40:06.555 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1007]
+2023-02-10 11:40:06.556 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class2]
+2023-02-10 11:40:06.556 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [1]
+2023-02-10 11:40:06.556 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [11]
+2023-02-10 11:40:06.556 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([roll_no1_0_] : [BIGINT]) - [1008]
+2023-02-10 11:40:06.556 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([class_na2_0_] : [VARCHAR]) - [class1]
+2023-02-10 11:40:06.556 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([discipli3_0_] : [INTEGER]) - [1]
+2023-02-10 11:40:06.556 TRACE 13348 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([seat_no4_0_] : [INTEGER]) - [22]
