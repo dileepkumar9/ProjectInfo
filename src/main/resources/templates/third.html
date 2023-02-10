@@ -12,18 +12,24 @@
         <thead>
         <tr>
             <th>Roll No</th>
-            <th>Student Name</th>
+            <th>Class Name</th>
             <th>Discipline Id</th>
+            <th>Seat No</th>
         </tr>
         </thead>
         <tbody>
         <tr th:each="studentDetails : ${listStudentDetails}">
             <td th:text="${studentDetails.rollNo}"></td>
-            <td th:text="${studentDetails.name}"></td>
+            <td th:text="${studentDetails.className}"></td>
             <td th:text="${studentDetails.disciplineId}"></td>
+            <td th:text="${studentDetails.seatNo}"></td>
         </tr>
         </tbody>
     </div>
 </table>
+<div style="height:15px"></div>
+<div>
+    <button type="button"><a style="margin:10px; text-decoration:none;" type="button" class="btn btn-success" th:href="@{/}">Back</a></button>
+</div>
 </body>
 </html>
